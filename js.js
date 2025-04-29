@@ -53,7 +53,7 @@ class Num {
         };
 
         if (isColliding(numRect, bucketRect)) {
-            if (nums_filled <= 10) {
+            if (nums_filled < 10) {
             this.collected = true;
         
         const numDisplay = document.querySelector('#num_1');
