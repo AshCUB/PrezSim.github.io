@@ -15,7 +15,7 @@ class Num {
         this.x = x;
         this.y = y;
         this.vely = vely;
-        
+
         this.num = num;
         this.width = 25;
         this.height = 30;
@@ -65,19 +65,12 @@ class Num {
         numDisplay.textContent = displayArray.join(' ');
 
         nums_filled++;
-            }
-            else {
-            
-                setTimeout(() => {
-                    alert("your number is: " + numDisplay.textContent);
-                    // Reset for a new number
-                    numDisplay.textContent = "_ _ _ _ _ _ _ _ _ _";
-                    nums_filled = 0;
-                }, 500);
-
-                
-                return;
-            }
+                    } else {
+                        alert = true;
+                        window.alert("your number is: " + document.querySelector('#num_1').textContent);
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 2000);    }
         }
     }
 };
@@ -136,6 +129,7 @@ function loop() {
     }
   
     requestAnimationFrame(loop);
+
 
 }
 
