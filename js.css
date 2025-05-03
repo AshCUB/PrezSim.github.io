@@ -33,6 +33,23 @@ body{
     margin: 0px;
 }
 
+.title {
+    margin-right: auto;
+}
+
+.phone_num {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.number {
+    padding: 0px;
+    white-space: nowrap;
+}
+
 #bucket {
     position: absolute;
     top: 0;
